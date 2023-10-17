@@ -3,7 +3,9 @@
 <head>
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/header.min.css" />
   <?php if (is_home()) { ?>
-    <link rel="preload" as="image" href="<?php the_field('offer_img', 'options'); ?>" />
+    <link rel="preload" as="image" href="<?php the_field('fotka', 'options'); ?>" />
+  <?php } else { ?>
+    <link rel="preload" as="image" href="<?php the_field('fotka'); ?>" />
   <?php } ?>
   <meta charset="UTF-8">
   <meta name="viewport" id="myViewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">

@@ -29,16 +29,16 @@
 </div>
 <div class="bg-about">
   <section class="offer-features container">
-      <?php if (have_rows('features', 'options')) : while (have_rows('features', 'options')) : the_row(); ?>
-      <div class="item">
-        <div class="icon">
-          <img src="<?php the_sub_field('icon') ?>" alt="Icon">
-        </div>
-        <b><?php the_sub_field('title') ?></b>
-        <p><?php the_sub_field('text') ?></p>
+    <?php if (have_rows('features', 'options')) : while (have_rows('features', 'options')) : the_row(); ?>
+    <div class="item">
+      <div class="icon">
+        <img src="<?php the_sub_field('icon') ?>" alt="Icon">
       </div>
-      <?php endwhile; endif; ?>
-    </section>
+      <b><?php the_sub_field('title') ?></b>
+      <p><?php the_sub_field('text') ?></p>
+    </div>
+    <?php endwhile; endif; ?>
+  </section>
   <div class="bg-chart">
     <section class="about">
       <div class="container">

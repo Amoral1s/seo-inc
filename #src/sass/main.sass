@@ -571,51 +571,515 @@
     p
       font-size: 16px
       margin-bottom: 0
+  .how
+    &-wrap
+      align-items: stretch
+      .item
+        margin-bottom: 0
+        b
+          font-size: 18px
+          margin-bottom: 10px
+        p
+          font-size: 14px
+        .icon
+          width: 46px
+          height: 46px
+          border-radius: 5px
+          margin-bottom: 10px
+          img
+            width: 22px
+            height: 22px
+  .footer-bot
+    position: relative
+    .copyright
+      position: absolute
+      bottom: 30px
+      left: 50%
+      transform: translateX(-50%)
+
+@media (max-width: 578px)
+  .title
+    font-size: 24px
+    margin-bottom: 30px
+  .how
+    .swiper
+      min-width: calc(100% + 15px)
+      padding-right: 97px
+  .inst
+    &-title
+      margin-bottom: 40px
+      h2
+        font-size: 24px
+        margin-bottom: 0
+  .form-wrap 
+    padding: 30px 20px
+    .left 
+      b
+        font-size: 24px
+        margin-bottom: 15px
+      p
+        font-size: 14px
+        margin-bottom: 40px
+  .feed
+    padding-bottom: 40px
+    .item
+      padding: 30px 20px
+      margin-bottom: 0
+      p
+        font-size: 13px
+      b
+        font-size: 15px
+        margin-bottom: 8px
+      .stars
+        margin-bottom: 15px
+        svg
+          width: 18px
+          height: 18px
+          margin-right: 4px
+    .wrapper
+      max-width: 100%
+      width: 100%
+      left: 0
+      .swiper
+        min-width: calc(100% + 15px)
+        padding-right: 90px
+      .arr
+        display: none
+  .footer
+    &-bot
+      .copyright
+        font-size: 12px
+        white-space: nowrap
+      .privacy
+        font-size: 12px
+        text-align: end
+      .social
+        a
+          margin-right: 10px
+          margin-left: 0
+    .contacts
+      a
+        font-size: 14px
+      a.phone
+        font-size: 22px
+    .left
+      &>b
+        font-size: 28px
+        margin-bottom: 14px
+      &>p
+        font-size: 13px
+        margin-bottom: 20px
+  .form 
+    .input
+      margin-bottom: 10px
+      p
+        font-size: 12px
+      textarea
+        height: 80px
+        font-size: 14px
+        padding-left: 15px
+        &::placeholder
+          font-size: 14px
+      input
+        height: 40px
+        font-size: 14px
+        padding-left: 15px
+        &::placeholder
+          font-size: 14px
+    .submit
+      .button
+        font-size: 13px
+        height: 40px
+    small
+      padding-left: 25px
+      font-size: 9px
+      a
+        font-size: 9px
+      &::before
+        width: 14px
+        height: 14px
+      &::after
+        width: 14px 
+        height: 14px
+  .bg-offer
+    background-size: 800px
+    background-position: -110px 0
+//end main-page
+//page-target
+.bg-offer-target
+  background-size: 1400px
+  background-position: -100px -100px
+.offer-target
+  padding-bottom: 120px
+  .right
+    width: calc(100% - 540px)
+  .left
+    width: 540px
+    h1
+      font-size: 64px
+.privet
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+  padding-bottom: 180px
+  .right
+    width: 620px
+    border-radius: 10px
+    border: $border
+    background: linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)
+    backdrop-filter: blur(51.5px)
+    padding: 30px
+    .item
+      padding-bottom: 20px
+      margin-bottom: 20px
+      border-bottom: $border
+      &:last-child
+        border: none
+        margin-bottom: 0
+        padding-bottom: 0
+  .left
+    width: calc(100% - 620px - 30px)
+    .title
+      margin-bottom: 20px
+    p
+      font-size: 18px
+      margin: 0
+
+.target
+  padding-top: 100px
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+  .left
+    width: calc(100% - 440px - 50px)
+  .right
+    width: 440px
+  .title
+    margin-bottom: 30px
+  p, li
+    color: rgba(#fff, .75)
+
+.target-feat-bg
+  background-repeat: no-repeat
+  background-size: 1920px
+  background-image: url(../img/target-feat-bg.svg)
+  background-position: 0 -370px
+
+.target-feat
+  padding-top: 100px
+  padding-bottom: 180px
+  .title
+    margin-bottom: 120px
+  .wrap
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    .item
+      border: $border
+      width: calc(33.3% - 20px)
+      border-radius: 10px
+      background: linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)
+      backdrop-filter: blur(51.5px)
+      padding: 70px 30px 40px 30px
+      position: relative
+      .icon
+        position: absolute
+        right: 0
+        top: -60px
+      b
+        font-size: 24px
+        display: block
+        margin-bottom: 10px
+      p
+        font-size: 18px
+
+.process
+  padding-bottom: 200px
+  .wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    .item
+      border: $border
+      width: calc(25% - 20px)
+      border-radius: 10px
+      background: linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)
+      backdrop-filter: blur(51.5px)
+      padding: 70px 30px 40px 30px
+      position: relative
+      padding: 30px
+      padding-top: 10px
+      min-height: 430px
+      .num
+        color: #6C04B3
+        font-size: 64px
+        line-height: 1
+        display: block
+        margin-bottom: 15px
+      b
+        font-size: 24px
+        display: block
+        margin-bottom: 10px
+      p
+        font-size: 18px
+        margin: 0
+      .show
+        color: #fff
+        opacity: 0.7
+        cursor: pointer
+        transition: .2s
+        padding-top: 10px
+        &:hover
+          opacity: 1
+          transition: .2s
+      &.show-item
+        p
+          background: linear-gradient(179deg, #FFF 72.19%, rgba(255, 255, 255, 0.00) 99.25%)
+          background-clip: text
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+          overflow: hidden
+
+.inst-target
+  h2
+    text-align: center
+    margin-bottom: 200px
+  .inst-title
+    transform: translateX(-50%)
+    top: 0
+  .inst-wrap
+    align-items: stretch
+    .item
+      justify-content: flex-start
+      b
+        font-size: 24px
+        text-transform: none
+        width: 100%
+      p
+        width: 100%
+      &:nth-child(1),
+      &:nth-child(2)
+        width: 390px
+        margin-bottom: 245px
+      &:nth-child(3),
+      &:nth-child(4)
+        width: 390px
+        margin-bottom: 0
+      &:nth-child(1)
+        margin-right: 300px
+      &:nth-child(3)
+        margin-left: 100px
+      &:nth-child(4)
+        margin-right: 100px
+
+.price
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    .item
+      border: $border
+      width: calc(33.3% - 30px)
+      border-radius: 10px
+      background: linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)
+      backdrop-filter: blur(51.5px)
+      padding: 50px 30px
+      position: relative
+      &:nth-child(2)
+        transform: scale(1.1)
+      .button
+        max-width: 100%
+        height: 60px
+      .costs
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 30px
+        &-main
+          font-size: 48px
+          display: block
+          font-weight: 700
+        &-sub
+          font-size: 24px
+          padding-bottom: 10px
+          font-weight: 500
+          color: #9C9C9C
+          height: auto
+          width: max-content
+          position: relative
+          &::after
+            position: absolute
+            left: 0
+            top: 0
+            content: ''
+            height: 100%
+            width: 100%
+            background-repeat: no-repeat
+            background-size: contain
+            background-image: url(../img/icons/line.svg)
+      b
+        font-size: 32px
+        margin-bottom: 15px
+        line-height: 1.5
+        display: block
+        position: relative
+        width: max-content
+      .label
+        position: absolute
+        background-color: #6C04B3
+        border-radius: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 5px 10px
+        font-size: 18px
+        top: -20px
+        right: -100px
+      p
+        font-size: 18px
+        display: block
+        margin-bottom: 30px
+      .feat
+        display: block
+        margin-bottom: 30px
+        &-item
+          display: flex
+          align-items: center
+          justify-content: flex-start
+          margin-bottom: 15px
+          &:last-child
+            margin-bottom: 0
+          .icon
+            display: flex
+            align-items: center
+            min-width: 24px
+            margin-right: 15px
+          p
+            font-weight: 700
+            margin-bottom: 0px
+
+.cases
+  padding-top: 120px
+  padding-bottom: 120px
+  &-wrap
+    position: relative
+    .item
+      img
+        border-radius: 10px
+        display: block
+        width: 100%
+        object-fit: cover
+        aspect-ratio: 1216 / 548
+    .next
+      right: -72px
+    .prev
+      left: -72px
+    .arr
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      height: 42px
+      width: 42px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      transition: .2s
+      background-color: rgba(#fff, .6)
+      border-radius: 10px
+      &.swiper-button-disabled
+        opacity: .3
+        pointer-events: none
+      &:hover
+        transition: .2s
+        background: linear-gradient(271deg, #D6324D 5.26%, #AF0388 47.04%, #6C04B3 92.23%)
+        svg
+          path
+            fill: #fff
+      svg
+        display: block
+
+.cases-feed-bg
+  background-image: url(../img/cases-feed-bg.svg)
+  background-size: cover
+  background-position: center
+
+.faq
+  padding-bottom: 180px
+  &-wrap
+    .item
+      display: block
+      border-bottom: $border
+      b, h3
+        font-size: 20px
+        display: block
+        padding: 30px 0
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        transition: .2s
+        cursor: pointer
+        &:hover
+          background: linear-gradient(85deg, #D6324D 7.59%, #AF0388 45.49%, #6C04B3 86.48%)
+          background-clip: text
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+        &.active
+          .icon
+            transform: rotate(180deg)
+            transition: .2s
+      &-content
+        font-size: 16px
+        line-height: 1.5
+        padding: 30px
+        padding-top: 0px
+        display: none
 
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
+@media (max-width: 1245px)
+  .offer-target
+    .left
+      width: 480px
+      h1
+        font-size: 50px
+      p
+        font-size: 18px
+    .right
+      width: calc(100% - 480px)
+  .privet
+    .right
+      width: 480px
+    .left
+      width: calc(100% - 480px - 30px)
+      h2
+        font-size: 40px
+  .target
+    .right
+      width: 400px
+    .left
+      width: calc(100% - 420px)
+  .target-feat
+    .wrap
+      .item
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 30px
+        p
+          font-size: 15px
+  .process
+    padding-bottom: 20px
+    .wrap
+      .item
+        padding-left: 20px
+        padding-bottom: 20px
+        padding-right: 20px
+        min-height: 310px
+        p
+          font-size: 14px
+        b
+          font-size: 18px
 
 
 

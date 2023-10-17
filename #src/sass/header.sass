@@ -11,6 +11,7 @@
   left: 0
   top: 0
   right: 0
+  
   &-wrap
     display: flex
     justify-content: space-between
@@ -181,6 +182,11 @@
           align-items: center
           object-fit: contain
           border-radius: 3px
+  a.header-logo
+    &:hover
+      p
+        color: $text_gray
+        -webkit-text-fill-color: $text_gray
 
 .bg-offer
   background-repeat: no-repeat
@@ -522,4 +528,39 @@
     p
       font-size: 16px
       margin-bottom: 30px
+
+@media (max-width: 578px)
+  .offer
+    .left
+      h1
+        font-size: 36px
+        margin-bottom: 10px
+      p
+        font-size: 16px
+        margin-bottom: 30px
+      .button
+        width: 100%
+        max-width: 100%
+        height: 60px
+        font-size: 18px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
