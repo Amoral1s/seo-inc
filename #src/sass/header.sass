@@ -1,0 +1,525 @@
+@import "./reset/_vars"
+@import "./reset/_reset"
+
+.page-top
+  padding-top: 153px
+.header
+  padding-top: 44px
+  padding-bottom: 44px
+  position: absolute
+  width: 100%
+  left: 0
+  top: 0
+  right: 0
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-logo
+    display: block
+    p
+      font-size: 14px
+      font-weight: 400
+      line-height: 1
+      white-space: nowrap
+      color: $text_gray
+      margin: 0
+    svg
+      display: block
+      margin-bottom: 7px
+  &-menu
+    display: flex!important
+    justify-content: center
+    align-items: center
+    .lang
+      display: flex
+      align-items: center
+      margin-left: 25px
+    ul
+      display: flex
+      align-items: center
+      justify-content: center
+      li
+        a
+          font-size: 18px
+          font-weight: 400
+          position: relative
+          display: block
+          margin: 0 25px
+          &:hover
+            background: linear-gradient(85deg, #D6324D 7.59%, #AF0388 45.49%, #6C04B3 86.48%)
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+      li.menu-item-has-children
+        position: relative
+        z-index: 20
+        &>a
+          position: relative
+          padding-right: 30px
+          &::before
+            position: absolute
+            content: ''
+            height: 24px
+            width: 24px
+            background-repeat: no-repeat
+            background-size: contain
+            background-image: url(../img/icons/arr.svg)
+            right: 0
+            top: calc(50% + 2px)
+            transform: translateY(-50%)
+        &::after
+          position: absolute
+          content: ''
+          top: 100%
+          left: 50%
+          transform: translateX(-50%)
+          width: 100%
+          height: 20px
+        ul
+          display: none
+          position: absolute
+          padding: 25px 
+          border: $border
+          background:  linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)
+          padding-bottom: 15px
+          border-radius: 10px
+          background-image: url(../img/bg-card.svg)
+          background-size: cover
+          background-repeat: no-repeat
+          backdrop-filter: blur(51.5px)
+          left: 50%
+          transform: translateX(-50%)
+          top: calc(100% + 15px)
+          z-index: 20
+          a
+            display: block
+            width: 100%
+            margin-left: 0
+            white-space: nowrap
+            margin-bottom: 10px
+            text-align: center
+  &-right
+    display: flex!important
+    flex-direction: column
+    align-items: flex-end
+    justify-content: center
+    a
+      font-size: 20px
+      font-weight: 700
+      display: block
+      text-align: end
+      margin-bottom: 5px
+      &:hover
+        background: linear-gradient(85deg, #D6324D 7.59%, #AF0388 45.49%, #6C04B3 86.48%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    small
+      font-size: 16px
+      font-weight: 400
+      display: block
+      text-align: end
+      color: $text_gray
+  .lang .gt_switcher 
+    position: relative
+    width: max-content
+    overflow: visible
+    .gt_option
+      position: absolute!important
+      top: 100%
+      left: 0  
+      width: max-content
+      padding: 0px
+      border-radius: 4px
+      border: 1px solid #A7A7A7!important
+      background: linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)!important
+      backdrop-filter: blur(51.5px)!important
+      transition: .2s
+      a
+        font-size: 0
+        transition: .2s
+        img
+          height: 24px
+          width: 28px
+          object-fit: contain
+          display: block
+    .gt_selected
+      background: transparent
+      width: max-content
+      padding: 0
+      margin: 0
+      a
+        font-size: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        width: max-content
+        padding: 0
+        margin: 0
+        background: transparent
+        &.open
+          &::after
+            transform: translateY(-50%) rotate(180deg)
+        &::after
+          position: absolute
+          content: ''
+          background-repeat: no-repeat
+          background-size: contain
+          background-image: url(../img/icons/arr.svg)
+          height: 24px
+          width: 24px
+          top: 50%
+          transform: translateY(-50%)
+          right: -24px
+          left: auto
+        img
+          height: 24px
+          width: 28px
+          display: flex
+          justify-content: center
+          align-items: center
+          object-fit: contain
+          border-radius: 3px
+
+.bg-offer
+  background-repeat: no-repeat
+  background-size: 100%
+  background-image: url(../img/bg-offer.svg)
+  background-position: -175px -590px
+
+.offer
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .right
+    width: 342px
+    img
+      width: 100%
+      object-fit: contain
+      display: block
+      margin: 0
+  .left
+    width: calc(100% - 342px - 115px)
+    h1
+      font-size: 64px
+      display: block
+      line-height: 1.2
+      margin-bottom: 15px
+    p
+      font-weight: 700
+      display: block
+      margin-bottom: 40px
+      font-size: 22px
+    .button
+      max-width: 270px
+
+.offer-features
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+  padding-bottom: 0px
+  .item
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    height: auto
+    border-radius: 10px
+    background-image: url(../img/bg-card.svg)
+    background-size: cover
+    background-repeat: no-repeat
+    backdrop-filter: blur(51.5px)
+    padding: 70px 30px
+    position: relative
+    width: calc(33.3% - 20px)
+    border: 1px solid rgba(#A7A7A7, .2)
+    b
+      font-size: 24px
+      display: block
+      margin-bottom: 10px
+    p
+      font-size: 18px
+      display: block
+      margin: 0
+    .icon 
+      position: absolute
+      right: 0px
+      top: -60px
+      display: block
+      img
+        display: block
+        object-fit: contain
+
+@keyframes header
+  0%
+    transform: translateY(-100%)
+  100%
+    transform: translateY(0)
+  
+.header.active
+  position: fixed
+  left: 0
+  right: 0
+  width: 100%
+  padding-top: 15px
+  padding-bottom: 15px
+  border-bottom: $border
+  background: lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)
+  backdrop-filter: blur(51.5px)
+  z-index: 1000
+  transform: translateY(-100%)
+  animation-delay: 1s
+  animation-duration: 0.5s
+  animation-name: header
+  animation-fill-mode: forwards
+  ul li.menu-item-has-children
+    ul
+      background: linear-gradient(180deg,rgba(149,149,149,.43) 0,rgba(3,3,3,1) 100%)
+
+@media (min-width: 992px) and (max-width: 1245px)
+  .header
+    &-menu
+      ul
+        li
+          a
+            font-size: 14px
+            margin: 0 10px
+          &.menu-item-has-children
+            &>a
+              padding-right: 24px
+
+@media (max-width: 1245px)
+  .offer
+    .left 
+      h1
+        font-size: 50px
+
+@media (max-width: 992px)
+  .page-top
+    padding-top: 110px
+  .header
+    padding-top: 15px
+    padding-bottom: 15px
+    &-logo
+      p
+        font-size: 9px
+      svg
+        width: 87px
+        object-fit: contain
+        height: 18px
+    .burger
+      display: flex!important
+      justify-content: center
+      align-items: center
+    &-menu
+      display: none!important
+    &-right
+      display: none!important
+  .menu-mob
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    z-index: 1200
+    padding: 15px
+    transition: 0
+    background-color: #fff
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-image: url(../img/mob-menu.svg)
+    overflow-y: auto
+    padding-bottom: 60px
+    .row
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 20px
+    .header-menu
+      display: flex!important
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      ul
+        display: block
+        li
+          width: 100%
+          display: flex
+          justify-content: flex-start
+          align-items: center
+          flex-direction: column
+          a
+            margin-bottom: 35px
+            font-size: 18px
+            font-weight: 400
+            width: max-content
+          &.menu-item-has-children
+            &::after
+              display: none
+            &>a
+              padding: 0 30px
+            &>a.active
+              &::before
+                transform: rotate(180deg) translateY(50%)
+                transition: .2s
+            ul
+              position: static
+              transform: none
+              padding: 0
+              display: none
+              background: transparent
+              border: none
+              background-image: none
+              margin-bottom: 35px
+              li
+                display: flex
+                justify-content: center
+                align-items: center
+                &:last-child
+                  a
+                    margin-bottom: 0
+                a
+                  margin-bottom: 10px
+                  font-size: 16px
+                  margin-right: 0
+    .social
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 30px
+      a
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 10px
+    .header-right
+      display: flex!important
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      margin-left: 0
+      a
+        font-size: 20px
+        text-align: center
+        justify-content: center
+        display: flex
+        margin-bottom: 5px
+      small
+        font-size: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+    .lang
+      margin-left: 0
+      margin-bottom: 35px
+    .lang .gt_switcher 
+      position: relative
+      width: max-content
+      overflow: visible
+      .gt_option
+        position: absolute!important
+        top: 100%
+        left: 0  
+        width: max-content
+        padding: 0px
+        border-radius: 4px
+        border: 1px solid #A7A7A7!important
+        background: linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)!important
+        backdrop-filter: blur(51.5px)!important
+        transition: .2s
+        a
+          font-size: 0
+          transition: .2s
+          img
+            height: 24px
+            width: 28px
+            object-fit: contain
+            display: block
+      .gt_selected
+        background: transparent
+        width: max-content
+        padding: 0
+        margin: 0
+        a
+          font-size: 0
+          display: flex
+          align-items: center
+          justify-content: center
+          width: max-content
+          padding: 0
+          margin: 0
+          background: transparent
+          &.open
+            &::after
+              transform: translateY(-50%) rotate(180deg)
+          &::after
+            position: absolute
+            content: ''
+            background-repeat: no-repeat
+            background-size: contain
+            background-image: url(../img/icons/arr.svg)
+            height: 24px
+            width: 24px
+            top: 50%
+            transform: translateY(-50%)
+            right: -24px
+            left: auto
+          img
+            height: 24px
+            width: 28px
+            display: flex
+            justify-content: center
+            align-items: center
+            object-fit: contain
+            border-radius: 3px
+    .menu-mob .lang .gt_switcher .gt_selected a
+      padding: 0 24px
+  .offer
+    .container
+      display: block
+    .left
+      width: 100%
+      margin-bottom: 15px
+      .button
+        margin: auto
+    .right
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      img
+        width: 100%
+        margin: auto
+        display: block
+        max-width: 330px
+        height: 360px
+        object-fit: contain
+        object-position: center top
+  .offer-features
+    display: block
+    .item
+      width: 100%
+      margin-bottom: 60px
+      height: 237px
+      padding: 20px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: center
+
+@media (max-width: 767px)
+  .offer .left 
+    h1
+      font-size: 35px
+      margin-bottom: 10px
+    p
+      font-size: 16px
+      margin-bottom: 30px
+

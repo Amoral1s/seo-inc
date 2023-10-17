@@ -1,0 +1,2629 @@
+@import "./reset/_vars"
+@import "./assets/_main-wp"
+
+.bg-about
+  background-repeat: no-repeat
+  background-size: cover
+  background-image: url(../img/about-bg.svg)
+  background-position: center
+
+.about
+  padding-top: 220px
+  padding-bottom: 170px
+  .top
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    margin-bottom: 70px
+    h2,p
+      width: calc(33.3% - 20px)
+    h2
+      font-size: 40px
+      display: block
+    p
+      display: block
+  .bot
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    .item
+      background-image: url(../img/bg-card.svg)
+      background-size: cover
+      background-repeat: no-repeat
+      backdrop-filter: blur(51.5px)
+      border-radius: 10px
+      width: calc(33.3% - 20px)
+      padding: 30px
+      border: $border
+
+.bg-chart
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-image: url(../img/chart-bg.svg)
+
+.chart
+  padding-bottom: 180px
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+  .right
+    width: 700px
+  .left
+    width: calc(100% - 700px - 110px)
+    h2
+      font-size: 32px
+      font-weight: 400
+      display: block
+      margin-bottom: 20px
+    b
+      font-size: 153px
+      display: block
+      line-height: 1
+      margin-bottom: 10px
+      position: relative
+      width: max-content
+      letter-spacing: -5px
+      &::after
+        position: absolute
+        content: ''
+        height: 24px
+        width: 24px
+        top: 24px
+        right: -24px
+        background-repeat: no-repeat
+        background-size: contain
+        background-image: url(../img/icons/*.svg  )
+    p
+      color: #797979
+      font-size: 20px
+
+.how-bg
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-image: url(../img/how-bg.svg)
+  
+.how
+  padding-bottom: 20px
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  background-image: url(../img/how-block-bg.svg)
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: stretch
+    flex-wrap: wrap
+    .item
+      display: block
+      width: calc(33.3% - 20px)
+      margin-bottom: 40px
+      .icon
+        height: 100px
+        width: 100px
+        border-radius: 10px
+        background-image: url(../img/bg-card.svg)
+        background-size: cover
+        background-repeat: no-repeat
+        backdrop-filter: blur(51.5px)
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 30px
+        border: $border
+      b
+        font-size: 24px
+        display: block
+        margin-bottom: 15px
+      p
+        font-size: 14px
+
+.title
+  font-size: 40px
+  display: block
+  margin-bottom: 90px
+
+.inst
+  padding-top: 120px
+  padding-bottom: 150px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: top right
+  background-image: url(../img/instr-bg.svg)
+  .container
+    position: relative
+  &-title
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 270px
+    h2
+      font-size: 40px
+      text-align: center
+      display: block
+    img
+      width: 270px
+      display: block
+      object-fit: contain
+      margin-bottom: 0
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    .item
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      b
+        font-size: 32px
+        text-transform: uppercase
+        display: block
+        text-align: center
+        margin-bottom: 15px
+        width: 300px
+      p
+        display: block
+        text-align: center
+        color: rgba(255, 255, 255, 0.75)
+        font-size: 18px
+        width: 300px
+      &:nth-child(1)
+        width: 100%
+        margin-bottom: 200px
+      &:nth-child(2),
+      &:nth-child(3)
+        margin-bottom: 230px
+        width: 50%
+        align-items: flex-start
+      &:nth-child(3)
+        align-items: flex-end
+      &:nth-child(4),
+      &:nth-child(5)
+        width: 50%
+
+.form
+  &-wrap
+    background-repeat: no-repeat
+    background-size: cover
+    border: $border
+    background: lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)
+    backdrop-filter: blur(51.5px)
+    background-position: center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-radius: 10px
+    padding: 60px 140px
+    .right
+      width: 320px
+    .left
+      width: 530px
+      b
+        font-size: 40px
+        font-weight: 700
+        display: block
+        margin-bottom: 20px
+      p
+        display: block
+        font-size: 18px
+
+.form
+  margin-bottom: 100px
+  .input
+    margin-bottom: 25px
+    p
+      font-size: 16px
+      display: block
+      color: #fff
+      margin-bottom: 4px
+    input, textarea
+      width: 100%
+      max-width: 100%
+      height: 60px
+      padding: 15px 25px
+      font-size: 18px
+      border-radius: 5px
+      background-color: #fff
+    textarea
+      height: 113px
+      margin-bottom: 10px
+  .row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 30px
+    .submit
+      width: calc(50% - 15px)
+      margin-bottom: 0
+    small
+      width: calc(50% - 15px)
+      margin-bottom: 0
+  .submit
+    position: relative
+    margin-bottom: 20px
+    .button
+      width: 100%
+    .wpcf7-spinner
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 20px
+  small
+    color: #9C9C9C
+    text-align: start
+    padding-left: 37px
+    position: relative
+    display: block
+    font-size: 14px
+    a
+      display: inline
+      color: #fff
+      font-size: 14px
+      &:hover
+        background: linear-gradient(85deg, #D6324D 7.59%, #AF0388 45.49%, #6C04B3 86.48%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    &::after
+      position: absolute
+      content: ''
+      height: 20px
+      width: 20px
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      border-radius: 2px
+      border: 1px solid #A7A7A7
+      cursor: pointer
+    &::before
+      position: absolute
+      content: ''
+      top: 50%
+      transform: translateY(-50%)
+      height: 20px
+      width: 20px
+      background-repeat: no-repeat
+      background-size: contain
+      background-image: url(../img/icons/check.svg)
+      left: 1px
+      opacity: 1
+      transition: .2s
+      cursor: pointer
+    &.uncheck
+      &::before
+        opacity: 0
+        transition: .2s
+
+.feed
+  padding-top: 100px
+  padding-bottom: 130px
+  .wrapper
+    position: relative
+    .next
+      right: -72px
+    .prev
+      left: -72px
+    .arr
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      height: 42px
+      width: 42px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      transition: .2s
+      background-color: rgba(#fff, .6)
+      border-radius: 10px
+      &.swiper-button-disabled
+        opacity: .3
+        pointer-events: none
+      &:hover
+        transition: .2s
+        background: linear-gradient(271deg, #D6324D 5.26%, #AF0388 47.04%, #6C04B3 92.23%)
+        svg
+          path
+            fill: #fff
+      svg
+        display: block
+  .item
+    background-repeat: no-repeat
+    background-size: cover
+    border: $border
+    background: lightgray 0% 0% / 100px 100px repeat, linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)
+    backdrop-filter: blur(51.5px)
+    padding: 40px 30px
+    border-radius: 10px
+    b
+      display: block
+      font-size: 20px
+      margin-bottom: 10px
+    p
+      font-size: 18px
+    .stars
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      margin-bottom: 20px
+      svg
+        display: block
+        margin-right: 5px
+
+.feed-bg
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-image: url(../img/feed-bg.svg)
+
+.footer
+  background-repeat: no-repeat
+  background-size: cover
+  background-image: url(../img/footer-bg.svg)
+  background-position: right bottom
+  &-bot
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 80px
+    .copyright
+      font-size: 18px
+      opacity: .5
+    .privacy
+      font-size: 18px
+      &:hover
+        background: linear-gradient(85deg, #D6324D 7.59%, #AF0388 45.49%, #6C04B3 86.48%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    .social
+      display: flex
+      align-items: center
+      justify-content: center
+      a
+        display: flex
+        align-items: center
+        margin: 0 10px
+        &:hover
+          svg
+            path
+              fill: #6C04B3
+  &-form
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 155px
+  .left
+    width: 505px
+    margin-right: 120px
+    &>b
+      font-size: 42px
+      display: block
+      margin-bottom: 20px
+    &>p
+      font-size: 18px
+      display: block
+      margin-bottom: 25px
+  .right
+    width: 390px
+  .form
+    margin-bottom: 0
+  .contacts
+    display: block
+    a
+      display: block
+      margin-bottom: 5px
+      font-size: 18px
+      font-weight: 400
+      &.phone
+        font-size: 32px
+        font-weight: 700
+      &:hover
+        background: linear-gradient(85deg, #D6324D 7.59%, #AF0388 45.49%, #6C04B3 86.48%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+@media (max-width: 1360px)
+  .feed .wrapper
+    max-width: calc( 100% - 120px )
+    left: 60px
+
+@media (max-width: 1700px)
+  .bg-offer
+    background-position: -110px -350px
+
+@media (max-width: 1400px)
+  .bg-offer
+    background-position: -110px -150px
+
+@media (min-width: 992px) and (max-width: 1245px)
+  .chart
+    .right
+      width: 500px
+      position: relative
+      top: 30px
+    .left
+      width: calc(100% - 560px)
+  .form-wrap
+    padding: 60px
+    .left
+      width: 440px
+      b
+        font-size: 34px
+
+@media (max-width: 992px)
+  .about
+    padding-top: 20px
+    padding-bottom: 80px
+    .bot
+      display: block
+      .item
+        width: 100%
+        margin-bottom: 10px
+        padding: 20px
+        height: auto
+    .top
+      margin-bottom: 50px
+      display: block
+      h2
+        font-size: 37px
+      h2,p
+        width: 100%
+        margin-bottom: 20px
+  .chart
+    padding-bottom: 80px
+    .container
+      display: block
+      .left
+        width: 100%
+      .right
+        width: 100%  
+  .how
+    padding-bottom: 40px
+    &-wrap
+      .item
+        width: calc(50% - 10px)
+        margin-bottom: 40px
+  .title
+    margin-bottom: 40px
+  .inst
+    padding-bottom: 40px
+    padding-top: 0
+    &-title
+      position: static
+      margin-bottom: 40px
+      transform: none
+      margin-left: auto
+      margin-right: auto
+    &-wrap
+      display: block
+      .item
+        width: 100%!important
+        margin-bottom: 30px!important
+        display: flex
+        align-items: center!important
+        p
+          width: 400px
+          max-width: 100%
+  .form
+    margin-bottom: 80px
+    &-wrap
+      display: block
+      padding: 40px
+      .left
+        width: 100%
+        margin-bottom: 40px
+      .right
+        width: 100%
+  .feed
+    padding-top: 0
+    padding-bottom: 80px
+  .footer
+    &-form
+      flex-direction: column-reverse
+      align-items: center
+      margin-bottom: 40px
+      .left
+        width: 100%
+        margin: 0
+      .right
+        width: 360px
+        max-width: 100%
+        margin: auto
+        margin-bottom: 40px
+
+@media (max-width: 767px)
+  .how
+    .swiper
+      overflow: visible
+    &-wrap
+      flex-wrap: nowrap
+  .about
+    .top
+      h2
+        font-size: 24px
+      p
+        font-size: 14px
+      .bot
+        .item
+          font-size: 14px
+          p
+            font-size: 14px
+  .chart .container .left
+    margin-bottom: 40px
+    h2
+      font-size: 20px
+      margin-bottom: 10px
+    b
+      font-size: 96px
+      margin-bottom: 20px
+    p
+      font-size: 16px
+      margin-bottom: 0
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+@import "./assets/_popup"
+
+
+
+

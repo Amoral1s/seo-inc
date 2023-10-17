@@ -1,0 +1,136 @@
+.thx
+  display: none
+  z-index: 25000
+  background-color: #fff
+  border-radius: 15px
+  padding: 30px
+  flex-direction: column
+  align-items: center
+  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.1)
+  min-height: 500px
+  .wrap
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 500px
+  b
+    display: block
+    font-size: 64px
+    font-weight: 400
+    margin-bottom: 10px
+    text-align: center
+    margin-bottom: 40px
+  .button
+    width: 100%
+    max-width: 100%
+    box-shadow: none
+    max-width: 320px
+
+.wpcf7-response-output
+  display: none!important
+
+.overlay
+  position: fixed
+  z-index: 10000
+  top: 0
+  width: 100%
+  left: 0
+  right: 0
+  bottom: 0
+  height: 100%
+  background: rgba(#000, .4)
+  display: none
+
+.popup
+  width: 795px
+  max-width: 95vw
+  max-height: 95vh
+  background-color: $bg
+  padding: 50px
+  border-radius: 25px
+  z-index: 15000
+  border: $border
+  background: linear-gradient(180deg, rgba(149, 149, 149, 0.13) 0%, rgba(3, 3, 3, 0.08) 100%)
+  backdrop-filter: blur(51.5px)
+  display: none
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  color: $text
+  border-radius: 10px
+  margin-bottom: 0
+  .row
+    display: block
+    small, .submit
+      width: 100%
+    .submit
+      margin-bottom: 20px
+  &-wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 345px
+    margin: auto
+    &>b
+      font-size: 40px
+      display: block
+      text-align: center
+      margin-bottom: 10px
+      margin-left: auto
+      margin-right: auto
+    &>p
+      font-size: 14px
+      display: block
+      text-align: center
+      margin-bottom: 40px
+      max-width: 310px
+      margin-left: auto
+      margin-right: auto
+  &-thx
+    opacity: .3
+  .close
+    position: absolute
+    cursor: pointer
+    transition: .2s
+    top: 30px
+    right: 30px
+    height: 32px
+    z-index: 10
+    width: 32px
+  &.popup-video
+    width: 920px
+    max-width: 95vw
+    .close
+      top: 5px
+      right: 5px
+    iframe
+      border-radius: 10px
+      max-width: 100%
+ 
+
+
+
+@media (max-width: 578px)
+  .popup
+    padding: 30px 25px
+    max-width: 360px
+    width: calc(100% - 30px)
+    &.thx
+      min-height: 0
+      .wrap
+        min-height: 0
+      b
+        font-size: 48px
+        margin-bottom: 20px
+    &-wrap
+      &>b
+        font-size: 24px
+        margin-bottom: 13px
+      &>p
+        font-size: 14px
+        margin-bottom: 30px
+        max-width: 100%
