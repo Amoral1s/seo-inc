@@ -2,70 +2,48 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-<section class="single container">
-	<div class="single-top">
-		<?php
-			if ( function_exists('yoast_breadcrumb') ) { yoast_breadcrumb('<p class="woocommerce-breadcrumb">', '</p>'); }
-		?>
-		<div class="date"><?php echo get_the_date('d M Y') ?></div>
-		<h1><?php the_title(); ?></h1>
-		<?php if (get_field('kratkoe_opisanie_stati')) { ?>
-		<div class="excerpt">
-			<?php the_field('kratkoe_opisanie_stati'); ?>
+<section class="single ">
+	<div class="container">
+		<div class="single-top">
+			<h1><?php the_title(); ?></h1>
 		</div>
-		<?php } ?>
-		<div class="meta">
-			<div class="meta-name">
-				<?php the_field('avtor'); ?>
-			</div>
-			<div class="meta-time">
-				<?php the_field('vremya_chteniya'); ?>
-			</div>
-			<div class="meta-views">
-				<span><?php echo do_shortcode('[post-views]'); ?></span>
-				<span>просмотра</span>
-			</div>
-			<div class="meta-rating">
-				<div>Рейтинг:</div> <?php echo do_shortcode('[stars]'); ?>
-			</div>
+		<section class="cases">
+				<div class="cases-wrap ">
+					<div class="arr prev">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7955 3.3295C13.2348 3.76884 13.2348 4.48116 12.7955 4.92049L6.84099 10.875L19.875 10.875C20.4963 10.875 21 11.3787 21 12C21 12.6213 20.4963 13.125 19.875 13.125L6.84099 13.125L12.7955 19.0795C13.2348 19.5188 13.2348 20.2312 12.7955 20.6705C12.3562 21.1098 11.6438 21.1098 11.2045 20.6705L3.3295 12.7955C3.11853 12.5845 3 12.2984 3 12C3 11.7016 3.11853 11.4155 3.32951 11.2045L11.2045 3.3295C11.6438 2.89016 12.3562 2.89017 12.7955 3.3295Z" fill="#020202"/>
+							</svg>
+					</div>
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<?php if (get_field('galereya')) {
+							$images = get_field('galereya');
+							if( $images ): ?>
+								<?php foreach( $images as $image ): ?>
+									<a class="swiper-slide item" href="<?php echo esc_url($image['url']); ?>">
+											<img src="<?php echo esc_url($image['url']); ?>" 
+													title="<?php echo esc_attr($image['title']); ?>" 
+													alt="<?php echo esc_attr($image['alt']); ?>" 
+											/>
+									</a>
+								<?php endforeach; endif; } else { ?>
+								<img src="<?php the_post_thumbnail_url(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
+								<?php } ?>
+						</div>
+					</div>
+					<div class="arr next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11.2045 20.6705C10.7652 20.2312 10.7652 19.5188 11.2045 19.0795L17.159 13.125L4.125 13.125C3.50368 13.125 3 12.6213 3 12C3 11.3787 3.50368 10.875 4.125 10.875L17.159 10.875L11.2045 4.9205C10.7652 4.48116 10.7652 3.76885 11.2045 3.32951C11.6438 2.89017 12.3562 2.89017 12.7955 3.32951L20.6705 11.2045C20.8815 11.4155 21 11.7016 21 12C21 12.2984 20.8815 12.5845 20.6705 12.7955L12.7955 20.6705C12.3562 21.1098 11.6438 21.1098 11.2045 20.6705Z" fill="#020202"/>
+							</svg>
+					</div>
+				</div>
+		</section>
+		<div class="content">
+			<?php the_content(); ?>
 		</div>
-		<img src="<?php echo the_post_thumbnail_url(); ?>" alt="img" class="thumb">
-	</div>
-	<div class="single-nav-wrap">
-		<b>Содержание статьи</b>
-		<div class="single-nav"></div>
-	</div>
-	<div class="content">
-		<?php the_content(); ?>
-	</div>
-	<div class="comments">
-		<?php comments_template(); ?>
 	</div>
 </section>
-
-<section class="news container">
-  <h2 class="title">
-    Читайте так же
-  </h2>
-  <p class="subtitle">
-		Наши интересные статьи и последние новости 
-  </p>
-  <div class="news-wrap">
-  <?php 
-    $my_posts = get_posts('numberposts=4&orderby=rand');
-    foreach ($my_posts as $post) :
-    setup_postdata($post);
-  ?>
-  <a href="<?php the_permalink(); ?>" class="news-wrap-item">
-    <img src="<?php the_post_thumbnail_url() ?>" alt="news">
-    <b><?php the_title(); ?></b>
-    <p><?php the_excerpt(); ?></p>
-  </a>
-  <?php endforeach; ?>
-  </div>
-</section>
-
-
+	
 
 
 <?php endwhile; ?>

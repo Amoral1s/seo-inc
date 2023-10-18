@@ -32,7 +32,7 @@
     <?php if (have_rows('features', 'options')) : while (have_rows('features', 'options')) : the_row(); ?>
     <div class="item">
       <div class="icon">
-        <img src="<?php the_sub_field('icon') ?>" alt="Icon">
+        <img width="120" height="120" src="<?php the_sub_field('icon') ?>" alt="Icon">
       </div>
       <b><?php the_sub_field('title') ?></b>
       <p><?php the_sub_field('text') ?></p>

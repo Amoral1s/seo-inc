@@ -418,21 +418,21 @@
     width: 390px
   .form
     margin-bottom: 0
-  .contacts
+.contacts
+  display: block
+  a
     display: block
-    a
-      display: block
-      margin-bottom: 5px
-      font-size: 18px
-      font-weight: 400
-      &.phone
-        font-size: 32px
-        font-weight: 700
-      &:hover
-        background: linear-gradient(85deg, #D6324D 7.59%, #AF0388 45.49%, #6C04B3 86.48%)
-        background-clip: text
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
+    margin-bottom: 5px
+    font-size: 18px
+    font-weight: 400
+    &.phone
+      font-size: 32px
+      font-weight: 700
+    &:hover
+      background: linear-gradient(85deg, #D6324D 7.59%, #AF0388 45.49%, #6C04B3 86.48%)
+      background-clip: text
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
 
 @media (max-width: 1360px)
   .feed .wrapper
@@ -645,6 +645,9 @@
         padding-right: 90px
       .arr
         display: none
+  .contacts
+    a
+      font-size: 14px
   .footer
     &-bot
       .copyright
@@ -657,9 +660,7 @@
         a
           margin-right: 10px
           margin-left: 0
-    .contacts
-      a
-        font-size: 14px
+    
       a.phone
         font-size: 22px
     .left
@@ -706,11 +707,15 @@
     background-position: -110px 0
 //end main-page
 //page-target
+@media (min-width: 992px)
+  .offer-target
+    padding-top: 240px
 .bg-offer-target
   background-size: 1400px
   background-position: -100px -100px
 .offer-target
   padding-bottom: 120px
+  
   .right
     width: calc(100% - 540px)
   .left
@@ -1080,61 +1085,518 @@
           font-size: 14px
         b
           font-size: 18px
+  .inst-target 
+    h2
+      margin-bottom: 80px
+    .inst-title
+      position: static
+      transform: none
+      margin-bottom: 50px
+      margin-left: auto
+      margin-right: auto
+    .inst-wrap
+      justify-content: space-between
+      align-items: stretch
+      .item
+        width: calc(50% - 10px)!important
+        margin: 0 0 60px 0!important
+  .cases-wrap
+    max-width: calc(100% - 120px)
+    margin: auto
 
 
+@media (min-width: 992px) and (max-width: 1245px)
+  .price-wrap
+    flex-wrap: wrap
+    .item
+      width: calc(50% - 15px)
+      &:nth-child(2)
+        order: -1
+        width: 60%
+        margin: auto
+        margin-bottom: 30px
+        transform: none
 
+@media (max-width: 992px)
+  .offer-target
+    padding-bottom: 80px
+    .container
+      display: block
+    .left
+      width: 100%
+    .right
+      width: 100%
+      img
+        max-width: 100%
+        width: 100%
+  .privet
+    display: block
+    padding-bottom: 80px
+    .left
+      width: 100%
+      margin-bottom: 50px
+    .right
+      width: 100%
+  .target
+    padding-top: 40px
+    padding-bottom: 0
+    .container
+      display: block
+    .left
+      width: 100%
+    .right
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+  .target-feat
+    padding-top: 40px
+    padding-bottom: 20px
+    .wrap
+      display: block
+      .item
+        width: 100%
+        margin-bottom: 80px
+  .process
+    padding-bottom: 80px
+    .wrapper
+      overflow: visible
+      padding-right: 50px
+  .inst-target .inst-wrap
+    align-items: center
+    justify-content: flex-start
+    display: flex
+    flex-direction: column
+    .item
+      width: 100%!important
+      max-width: 400px
+      margin-left: auto
+      margin-right: auto
+  .price-wrap
+    display: block
+    .item
+      width: 100%
+      margin-bottom: 40px
+      &:nth-child(2)
+        transform: none
+  .cases
+    padding-top: 0
 
+@media (max-width: 767px)
+  .offer-target 
+    padding-bottom: 35px
+    .left
+      h1
+        margin-bottom: 10px
+      p
+        font-size: 14px
+        margin-bottom: 20px
+      .button
+        max-width: 100%
+        width: 100%
+  .privet
+    .right
+      padding: 20px
+      p
+        font-size: 14px
+    .left
+      margin-bottom: 20px
+      .title
+        margin-bottom: 10px
+      p
+        font-size: 14px
+        margin-bottom: 0
 
+@media (max-width: 578px)
+  .offer-target
+    .left
+      h1
+        font-size: 36px
+  .privet
+    .left
+      .title
+        font-size: 24px
+  .target
+    .left
+      p
+        color: rgba(#fff, .75)
+        font-size: 18px
+  .target-feat
+    .title
+      margin-bottom: 94px
+  .target-feat .wrap .item
+    padding: 70px 20px 30px 20px
+    margin-bottom: 60px
+    .icon
+      top: -45px
+      img
+        width: 90px
+        height: 90px
+    b
+      font-size: 24px
+      margin-bottom: 10px
+    p
+      font-size: 18px
+  .process .wrap
+    align-items: stretch
+  .process
+    .wrapper
+      padding-right: 80px
+  .inst-target 
+    h2
+      margin-bottom: 0
+    .inst-title
+      margin-bottom: 30px
+    .inst-wrap
+      .item
+        margin-bottom: 30px!important
+  .price-wrap .item
+    margin-bottom: 20px
+  .cases
+    padding-bottom: 140px
+  .cases-wrap
+    max-width: 100%
+    overflow: visible
+    position: relative
+    .arr
+      transform: translateX(-50%)
+      bottom: -70px
+      top: auto
+      height: 42px
+      width: 42px
+    .next
+      left: calc(50% + 30px)
+      right: auto
+    .prev
+      left: calc(50% - 30px)
+  .faq-wrap .item-content
+    font-size: 16px
+    color: rgba(#fff, .75)
+    padding-left: 0
+    padding-right: 0
+  .faq-wrap .item-title
+    font-size: 18px
+  .faq
+    padding-bottom: 30px
+  .price-wrap .item 
+    p
+      font-size: 16px
+      margin-bottom: 30px
+  .price-wrap .item .feat-item 
+    margin-bottom: 15px
+    p
+      font-size: 16px
+  .price-wrap .item 
+    padding-left: 25px
+    padding-right: 25px
+    padding-bottom: 70px
+    padding-top: 70px
+    .costs-main
+      font-size: 44px
+      white-space: nowrap
+    .costs-sub
+      font-size: 22px
+      white-space: nowrap
 
+//page target end
+//page context start
+@media (min-width: 992px)
+  .offer-context
+    padding-top: 240px
+    .right
+      img
+        position: relative
+        top: -50px
 
+.offer.offer-context
 
+  .right
+    width: calc(100% - 640px)
+  .left
+    width: 640px
+    h1
+      font-size: 50px
+    p
+      font-size: 14px
+      margin-bottom: 20px
+    .button
+      margin-top: 60px
 
+      
+@media (max-width: 1245px)
+  .offer.offer-context 
+    .left
+      width: 550px
+    .right
+      width: calc(100% - 550px)
 
+@media (min-width: 1245px)
+  .inst-target.inst-context
+    padding-bottom: 240px
+    .inst-title
+      top: 50%
+      transform: translate(-50%, -50%)
+    .inst-wrap
+      .item
+        width: 550px
+        b
+          font-size: 27px
+        &:nth-child(1),
+        &:nth-child(2)
+          margin: 0
+          margin-bottom: 332px
+        &:nth-child(3),
+        &:nth-child(4)
+          margin: 0
+        &:nth-child(1)
+          b
+            text-align: left
+        &:nth-child(4)
+          b
+            text-align: right
   
+@media (max-width: 992px)
+  .offer.offer-context 
+    .left
+      width: 100%
+    .right
+      width: 100%
+
+@media (max-width: 767px)
+  .offer.offer-context .left h1
+    font-size: 40px
+
+@media (max-width: 578px)
+  .offer.offer-context 
+    position: relative
+    margin-bottom: -100px
+    .left 
+      h1
+        font-size: 36px
+      .button
+        margin-top: 30px
+  .target .left p
+    font-size: 14px
+
+//page contenxt end
+//page seo start
+
+.process.process-seo
+  padding-top: 100px
+  padding-bottom: 80px
+  .wrap
+    .item
+      width: calc(33.3% - 20px)
+      min-height: 0
+
+.inst-target.inst-seo
+  .title
+    max-width: 270px
+    margin-left: auto
+    margin-right: auto
+  .inst-wrap 
+    .item:nth-child(1), 
+    .item:nth-child(2)
+      max-width: 360px
 
 
+@media (max-width: 992px)
+  .process.process-seo
+    padding-top: 40px
+    padding-bottom: 40px
+  .target.target-seo
+    padding-bottom: 20px
+  .inst-target.inst-seo .title
+    margin-bottom: 20px
+  .inst.inst-seo
+    padding-bottom: 40px
 
+//page seo end
+//page single start
 
+.single
+  padding-top: 250px
+  background-repeat: no-repeat
+  background-size: cover
+  background-image: url(../img/single-bg.svg)
+  background-position: top center
+  padding-bottom: 120px
+  &-top
+    h1
+      font-size: 54px
+      display: block
+      margin-bottom: 40px
+  .cases
+    padding-top: 0
+    padding-bottom: 80px
+    img
+      object-fit: contain
+      aspect-ratio: unset
 
+@media (max-width: 992px)
+  .single
+    padding-top: 100px
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url(../img/single-bg.svg)
+    background-position: top center
+    padding-bottom: 20px
+    &-top
+      h1
+        font-size: 44px
+        display: block
+        margin-bottom: 30px
+    .cases
+      padding-top: 0
+      padding-bottom: 20px
 
+@media (max-width: 578px)
+  .single
+    padding-top: 100px
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url(../img/single-bg.svg)
+    background-position: top center
+    padding-bottom: 20px
+    &-top
+      h1
+        font-size: 34px
+        display: block
+        margin-bottom: 30px
+    .cases
+      padding-top: 0
+      padding-bottom: 80px
 
+//page cases start
 
+.news
+  padding-bottom: 220px
+  background-repeat: no-repeat
+  background-size: 100%
+  background-image: url(../img/single-bg.svg)
+  background-position: top center
+  h1
+    font-size: 44px
+    display: block
+    margin-bottom: 20px
+  &-cats
+    display: block
+    margin-bottom: 40px
+    ul
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      a
+        font-size: 16px
+        color: #fff
+        opacity: .5
+        display: block
+        margin-right: 30px
+      li.current-cat
+        a
+          opacity: 1
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: stretch
+    &-item
+      display: flex
+      justify-content: center
+      align-items: center
+      width: calc(50% - 15px)
+      margin-bottom: 30px
+      position: relative
+      .n-title
+        position: absolute
+        width: 100%
+        height: auto
+        padding: 20px
+        background-color: #000
+        color: #fff
+        font-size: 24px
+        bottom: 0
+        left: 0
+        right: 0
+        transition: .2s
+        opacity: 0
+        z-index: 10
+      img
+        object-fit: contain
+        object-position: center
+      &:hover
+        .n-title
+          opacity: 1
+          transition: .2s
+          color: #fff
+          background-clip: none
+          -webkit-background-clip: none
+          -webkit-text-fill-color: #fff
 
+@media (max-width: 992px)
+  .news-wrap-item
+    position: static
+    display: block
+    img
+      width: 100%
+      object-fit: cover
+      aspect-ratio: 1216 / 600
+      display: block
+      margin-bottom: 0px
+    .n-title
+      opacity: 1
+      position: static
+      width: 100%
+      max-width: 100%
+      font-size: 18px
+      display: block
+      
+@media (max-width: 578px)
+  .news-wrap-item
+    width: 100%
+  .news
+    padding-bottom: 40px
+    h1
+      font-size: 40px
+      margin-bottom: 20px
+    &-cats
+      margin-bottom: 30px
 
+.contacts-page
+  padding-top: 250px
+  padding-bottom: 180px
+  background-size: cover
+  .contacts
+    padding-top: 40px
+  .form
+    padding-bottom: 0
+    padding-top: 0
 
+.footer-contacts
+  background-image: none
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 992px)
+  .menu-mob .header-menu ul li.menu-item-has-children ul li a
+    opacity: .8
+  .contacts-page
+    padding-top: 130px
+    background-size: cover
+    background-position: center
+    padding-bottom: 0px
+    .contacts
+      padding-top: 20px
+      display: none
+    .contacts.mb-hiden
+      display: block!important
+      padding-top: 40px
+      a
+        font-size: 14px
+      .phone
+        font-size: 24px
+      
+    .form
+      padding-bottom: 0
+      padding-top: 0
 
 
 
@@ -3087,7 +3549,6 @@
 
 
 @import "./assets/_popup"
-
 
 
 

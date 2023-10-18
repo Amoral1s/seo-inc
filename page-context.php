@@ -1,13 +1,13 @@
 <?php
 /**
- Template Name: Таргет
+ Template Name: Контекст
 */
 
 get_header();
 ?>
 
 <div class="bg-offer bg-offer-target">
-  <section class="offer offer-target page-top">
+  <section class="offer offer-target offer-context page-top">
     <div class="container">
       <div class="left">
         <h1>
@@ -30,27 +30,6 @@ get_header();
       </div>
     </div>
   </section>
-  <section class="privet container">
-    <div class="left">
-      <h2 class="title">
-        <?php the_field('content_title'); ?>
-      </h2>
-      <p>
-        <?php the_field('content_subtitle'); ?>
-      </p>
-    </div>
-    <div class="right">
-      <?php if (have_rows('content')) : while (have_rows('content')) : the_row(); ?>
-        <div class="item">
-          <p><?php the_sub_field('text') ?></p>
-        </div>
-        <?php endwhile; endif; ?>
-    </div>
-      
-  </section>
-</div>
-
-<div class="how-bg">
   <section class="how">
     <div class="container">
       <h2 class="title"><?php the_field('how_title') ?></h2>
@@ -69,6 +48,10 @@ get_header();
       </div>
     </div>
   </section>
+  
+</div>
+
+<div class="how-bg">
   <section class="target">
     <div class="container">
       <div class="left">
@@ -84,10 +67,7 @@ get_header();
       </div>
     </div>
   </section>
-</div>
-
-<div class="target-feat-bg">
-  <section class="target-feat">
+  <section class="target-feat"> 
     <div class="container">
       <h2 class="title"><?php the_field('feat_title'); ?></h2>
       <div class="wrap">
@@ -103,6 +83,12 @@ get_header();
       </div>
     </div>
   </section>
+  
+  
+</div>
+
+<div class="target-feat-bg">
+  
   <section class="process">
     <div class="container">
       <h2 class="title"><?php the_field('proc_title'); ?></h2>
@@ -119,7 +105,7 @@ get_header();
       </div>
     </div>
   </section>
-  <section class="inst inst-target">
+  <section class="inst inst-target inst-context">
     <div class="container">
       <h2 class="title"><?php the_field('instr_title') ?></h2>
     </div>
@@ -131,7 +117,7 @@ get_header();
         <?php if (have_rows('instr_cards')) : while (have_rows('instr_cards')) : the_row(); ?>
         <div class="item">
           <b><?php the_sub_field('title') ?></b>
-          <p><?php the_sub_field('text') ?></p>
+          <!-- <p><?php the_sub_field('text') ?></p> -->
         </div>
         <?php endwhile; endif; ?>
       </div>
@@ -200,7 +186,7 @@ get_header();
           <div class="swiper-wrapper">
             <?php
               $args = array(
-                'category_name' => 'target'
+                'category_name' => 'context'
               );
               $query = new WP_Query( $args );
               if ( $query->have_posts() ) {

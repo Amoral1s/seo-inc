@@ -727,6 +727,89 @@ section {
   background: linear-gradient(180deg, rgba(149, 149, 149, 0.43) 0, rgb(3, 3, 3) 100%);
 }
 
+body {
+  display: block;
+}
+
+.tap {
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-image: url(../img/tap-bg.svg);
+  display: block;
+}
+
+.tap .header-logo {
+  margin: auto;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tap h1 {
+  font-size: 32px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.tap .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.tap .social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 25px;
+}
+
+.tap .social svg {
+  height: 44px;
+  width: 44px;
+}
+
+.tap .button {
+  width: 100%;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.tap .q {
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 1245px) {
   .container {
     max-width: 960px;

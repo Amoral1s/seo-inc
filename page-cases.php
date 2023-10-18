@@ -1,4 +1,8 @@
 <?php
+/**
+ Template Name: Кейсы
+ */
+
 get_header();
 ?>
 

@@ -2,8 +2,8 @@
 <html <?php language_attributes(); ?>>
 <head>
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/header.min.css" />
-  <?php if (is_home()) { ?>
-    <link rel="preload" as="image" href="<?php the_field('fotka', 'options'); ?>" />
+  <?php if (is_home()) { $imageR = get_field('fotka', 'options');  ?>
+    <link rel="preload" as="image" href="<?php echo esc_url($imageR['url']); ?>" />
   <?php } else { ?>
     <link rel="preload" as="image" href="<?php the_field('fotka'); ?>" />
   <?php } ?>
@@ -20,9 +20,9 @@
   <?php wp_head(); ?>
 </head>
 
-<body id="top">
+<body id="top" style="color: #fff; background: #020202">
 
-<header itemscope itemtype="http://schema.org/WPHeader" class=" header"> 
+<header itemscope itemtype="http://schema.org/WPHeader" class=" header" > 
   <div class="container"> 
     <div class="header-wrap"> 
       <?php if (is_home()) : ?>
