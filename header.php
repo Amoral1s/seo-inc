@@ -60,6 +60,11 @@
       <?php endif; ?> 
       <nav class="header-menu" style="display: none" itemscope itemtype="http://schema.org/SiteNavigationElement" > 
         <ul itemprop="about" itemscope itemtype="http://schema.org/ItemList">
+        <?php if (!is_home()) : ?>
+          <li>
+            <a href="/">Главная</a>
+          </li>
+        <?php endif; ?> 
         <?php  
           wp_nav_menu( array(
             'menu_class' => '',

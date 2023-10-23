@@ -120,21 +120,23 @@
     </div>
   </section>
   <div class="feed-bg">
-    <div class="form">
-      <div class="container">
-        <div class="form-wrap">
-          <div class="left">
-            <b>Узнайте точную стоимость продвижения</b>
-            <p>
-              Перезвоню в течении рабочего дня и обсудим стратегию по продвижению вашего проекта
-            </p>
-          </div>
-          <div class="right">
-            <?php echo do_shortcode('[contact-form-7 id="f39d860" title="Узнайте точную стоимость продвижения"]'); ?>
+    <noindex>
+      <div class="form">
+        <div class="container">
+          <div class="form-wrap">
+            <div class="left">
+              <b>Узнайте точную стоимость продвижения</b>
+              <p>
+                Перезвоню в течении рабочего дня и обсудим стратегию по продвижению вашего проекта
+              </p>
+            </div>
+            <div class="right">
+              <?php echo do_shortcode('[contact-form-7 id="f39d860" title="Узнайте точную стоимость продвижения"]'); ?>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </noindex>
     <section class="feed">
       <div class="container">
         <h2 class="title"><?php the_field('feed_title', 'options') ?></h2>

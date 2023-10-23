@@ -6,6 +6,7 @@
 get_header();
 ?>
 
+<noindex>
 <div class="bg-offer contacts-page">
   <div class="form">
     <div class="container">
@@ -33,6 +34,7 @@ get_header();
     </div>
   </div>
 </div>
+<noindex>
 
 
 

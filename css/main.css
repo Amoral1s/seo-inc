@@ -1699,6 +1699,10 @@
   position: relative;
 }
 
+.cases-wrap .item {
+  cursor: unset;
+}
+
 .cases-wrap .item img {
   border-radius: 10px;
   display: block;
@@ -1868,7 +1872,7 @@
 }
 
 .single {
-  padding-top: 250px;
+  padding-top: 220px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/single-bg.svg);

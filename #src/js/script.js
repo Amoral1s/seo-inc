@@ -246,7 +246,10 @@ if (links) {
 	const formSmall = document.querySelectorAll('.form small');
 	if (formSmall.length > 0) {
 		formSmall.forEach(item => {
+
 			const submitBtn = item.parentElement.querySelector('.button');
+			submitBtn.classList.add('disabled');
+			item.classList.add('uncheck');
 			item.addEventListener('click', (event) => {
 				console.log(event.target)
 				if (event.target.classList.contains('uncheck')) {
@@ -270,5 +273,12 @@ if (links) {
 	$('.faq .item-title').on('click', function() {
 		$(this).toggleClass('active');
 		$(this).next().slideToggle(200);
-	})
+	});
+
+	const cases = document.querySelectorAll('.cases-wrap .item');
+
+	if (cases.length > 0) {
+		cases.forEach(item => item.addEventListener('click', (event) => event.preventDefault()))
+	}
+
 }); //end
