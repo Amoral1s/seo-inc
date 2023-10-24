@@ -28,6 +28,7 @@ jQuery(document).ready(function ($) {
 				nextEl: '.cases .next',
 				prevEl: '.cases .prev',
 			},
+			loop: true,
 			breakpoints: {
 				300: {
 					slidesPerView: 1,

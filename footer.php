@@ -13,6 +13,7 @@
             <a class="phone" href="tel:<?php the_field('phone_800', 'options'); ?>   " target="blank"><?php the_field('phone_800', 'options'); ?>   </a>
             <a href="mailto:<?php the_field('email', 'options'); ?>" target="blank"><?php the_field('email', 'options'); ?>   </a>
             <a href="<?php the_field('tg', 'options'); ?>" target="blank">Telegram: <?php the_field('tg_nickname', 'options'); ?>   </a>
+            <a href="<?php the_field('whatsapp', 'options'); ?>" target="blank">Whatsapp: <?php the_field('phone', 'options'); ?>   </a>
           </div>
         </div>
         <div class="right">
@@ -128,7 +129,12 @@
     </div>
   </div>
   <nav class="header-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" > 
-    <ul itemprop="about" itemscope itemtype="http://schema.org/ItemList">
+    <ul itemprop="about" itemscope itemtype="http://schema.org/ItemList"> 
+    <?php if (!is_home()) : ?>
+          <li>
+            <a href="/">Главная</a>
+          </li>
+        <?php endif; ?> 
     <?php  
       wp_nav_menu( array(
         'menu_class' => '',
@@ -184,5 +190,6 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/36642810" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){VK.Retargeting.Init("VK-RTRG-653171-fTtqG"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-653171-fTtqG" style="position:fixed; left:-999px;" alt=""/></noscript>
 </body>
 </html>

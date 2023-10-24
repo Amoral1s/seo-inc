@@ -9,6 +9,7 @@
   position: absolute
   width: 100%
   left: 0
+  z-index: 15
   top: 0
   right: 0
   &-wrap
@@ -140,8 +141,8 @@
         font-size: 0
         transition: .2s
         img
-          height: 24px
-          width: 28px
+          max-height: 20px
+          max-width: 24px
           object-fit: contain
           display: block
     .gt_selected
@@ -345,7 +346,7 @@
       display: flex
       justify-content: space-between
       align-items: center
-      margin-bottom: 20px
+      margin-bottom: 50px
     .header-menu
       display: flex!important
       flex-direction: column
@@ -443,8 +444,8 @@
           font-size: 0
           transition: .2s
           img
-            height: 24px
-            width: 28px
+            max-height: 20px
+            max-width: 24px
             object-fit: contain
             display: block
       .gt_selected
@@ -477,8 +478,8 @@
             right: -24px
             left: auto
           img
-            height: 24px
-            width: 28px
+            height: 20px
+            width: 24px
             display: flex
             justify-content: center
             align-items: center
@@ -529,6 +530,8 @@
       margin-bottom: 30px
 
 @media (max-width: 578px)
+  .offer.page-top
+    padding-top: 90px
   .offer
     .left
       h1
@@ -590,7 +593,9 @@ body
     display: block
     margin: auto
 
-
+.header .lang .gt_switcher .gt_selected a img
+  height: 20px!important
+  width: 24px!important
 
 
 

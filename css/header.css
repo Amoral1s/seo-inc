@@ -244,6 +244,7 @@ section {
   position: absolute;
   width: 100%;
   left: 0;
+  z-index: 15;
   top: 0;
   right: 0;
 }
@@ -473,8 +474,8 @@ section {
 }
 
 .header .lang .gt_switcher .gt_option a img {
-  height: 24px;
-  width: 28px;
+  max-height: 20px;
+  max-width: 24px;
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
@@ -810,6 +811,11 @@ body {
   margin: auto;
 }
 
+.header .lang .gt_switcher .gt_selected a img {
+  height: 20px !important;
+  width: 24px !important;
+}
+
 @media (max-width: 1245px) {
   .container {
     max-width: 960px;
@@ -898,7 +904,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .menu-mob .header-menu {
@@ -1109,8 +1115,8 @@ body {
   }
 
   .menu-mob .lang .gt_switcher .gt_option a img {
-    height: 24px;
-    width: 28px;
+    max-height: 20px;
+    max-width: 24px;
     -o-object-fit: contain;
        object-fit: contain;
     display: block;
@@ -1167,8 +1173,8 @@ body {
   }
 
   .menu-mob .lang .gt_switcher .gt_selected a img {
-    height: 24px;
-    width: 28px;
+    height: 20px;
+    width: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1267,6 +1273,10 @@ body {
 }
 
 @media (max-width: 578px) {
+  .offer.page-top {
+    padding-top: 90px;
+  }
+
   .offer .left h1 {
     font-size: 36px;
     margin-bottom: 10px;
