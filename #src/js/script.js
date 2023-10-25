@@ -97,6 +97,7 @@ if (links) {
 
 		
   $(".wpcf7").on('wpcf7mailsent', function(event){
+		
 		if (event.detail.contactFormId == '426') {
 			$('#thx-sub').fadeIn(200);
 			$('.popup').addClass('popup-thx');
@@ -115,6 +116,7 @@ if (links) {
 			$('#thx').removeClass('popup-thx');
 			$('.popup').removeClass('popup-thx');
 		}, 3000);
+		VK.Goal('conversion');
   });
   $(".wpcf7").on('wpcf7invalid', function(event){
     alert('Заполните все поля и попробуйте снова.');

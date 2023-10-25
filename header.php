@@ -80,7 +80,7 @@
       </nav> 
       <div class="header-right" style="display: none"> 
         <div class="header-contacts"> 
-          <a target="blank" class="phone" href="tel:<?php the_field('phone', 'options'); ?>">
+          <a rel="nofollow" noindex target="blank" class="phone" href="tel:<?php the_field('phone', 'options'); ?>">
             <?php the_field('phone', 'options'); ?>          
           </a>
           <small>9-21 по Мск</small>

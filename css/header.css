@@ -474,8 +474,8 @@ section {
 }
 
 .header .lang .gt_switcher .gt_option a img {
-  max-height: 20px;
-  max-width: 24px;
+  max-height: 18px;
+  max-width: 22px;
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
@@ -532,8 +532,8 @@ section {
 }
 
 .header .lang .gt_switcher .gt_selected a img {
-  height: 24px;
-  width: 28px;
+  height: 18px;
+  width: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,8 +812,8 @@ body {
 }
 
 .header .lang .gt_switcher .gt_selected a img {
-  height: 20px !important;
-  width: 24px !important;
+  height: 18px !important;
+  width: 22px !important;
 }
 
 @media (max-width: 1245px) {
@@ -1115,8 +1115,8 @@ body {
   }
 
   .menu-mob .lang .gt_switcher .gt_option a img {
-    max-height: 20px;
-    max-width: 24px;
+    max-height: 18px;
+    max-width: 22px;
     -o-object-fit: contain;
        object-fit: contain;
     display: block;
@@ -1173,8 +1173,8 @@ body {
   }
 
   .menu-mob .lang .gt_switcher .gt_selected a img {
-    height: 20px;
-    width: 24px;
+    height: 18px;
+    width: 22px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
